@@ -12,20 +12,7 @@ To use nLookup-jquery you will need:
  All plugins are in "dist" folder
 
 ## How to use
-You can lookup a record using the following code:
-	$.fn.nLookup({
-		columns: [
-			{'label': 'Name', 'field': 'name'},
-			{'label': 'Code', 'field': 'code'},
-		],
-		url: 'countries.json',
-		onSelect: function (data) {
-			// Will show mesage box with country name
-			alert(data.name);
-		}
-	});
-	
+You can see this plugin working in "example" folder.	
 At this moment, works only with JSON datasource.
-Will load JSON data from "countries.json" file, and WHEN the user select a record, will return to "onSelect" callback with the selected row.
-You can see this plugin working in "example" folder.
+
 
