@@ -1,7 +1,10 @@
 # nlookup-jquery
 Nice lookup plugin for jQuery
-This plugin will help you to created quickly lookup box for you application.
+
+This plugin will help you to created quickly lookup box for your application.
+
 This use DataTable to show a nice responsive table (with alot of features like search, pagination, etc) and with magnificPopup to show in a modal form.
+
 Also are included bootstrap css for a nice styling :)
 
 ## Requeriments
