@@ -38,7 +38,7 @@
         $.magnificPopup.open({
             items: {
                 src: '<div class="popup-basic bg-none mfp-with-anim"><div class="panel">' +
-                '<div class="panel-heading"><span class="panel-title">Selecionar registro</span></div>' +
+                '<div class="panel-heading"><span class="panel-title">Select record</span></div>' +
                 '<div class="panel-body"><table class="table table-striped table-hover datatable" id="nlookup_search">' +
                 '<thead>' + get_columns() + '</thead><tbody></tbody></table>' +
                 '<div class="panel-footer text-right"><button class="btn btn-primary" onclick="$.magnificPopup.instance.close();">Close</button>' +
