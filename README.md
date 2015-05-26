@@ -1,21 +1,31 @@
 # nlookup-jquery
 Nice lookup plugin for jQuery
+This plugin will help you to created quickly lookup box for you application.
+This use DataTable to show a nice responsive table (with alot of features like search, pagination, etc) and with magnificPopup to show in a modal form.
+Also are included bootstrap css for a nice styling :)
 
-== Requeriments ==
-jQuery 1.x
-DataTables
-MagnificPopup
+== Requeriments
+To use nLookup-jquery you will need:
+ - jQuery 1.x
+ - dataTables plugin
+ - magnificPopup plugin
+ All plugins are in "dist" folder
+ 
+== How to use
+You can lookup a record using the following code:
+	$.fn.nLookup({
+		columns: [
+			{'label': 'Name', 'field': 'name'},
+			{'label': 'Code', 'field': 'code'},
+		],
+		url: 'countries.json',
+		onSelect: function (data) {
+			// Will show mesage box with country name
+			alert(data.name);
+		}
+	});
+	
+At this moment, works only with JSON datasource.
+Will load JSON data from "countries.json" file, and WHEN the user select a record, will return to "onSelect" callback with the selected row.
+You can see this plugin working in "example" folder.
 
-== How to use ==
-$.fn.nLookup({
-                    colunas: [
-                        {'label': 'Código', 'campo': 'id'},
-                        {'label': 'Nome', 'campo': 'nome'},
-                        {'label': 'Telefone', 'campo': 'telefone1'},
-                        {'label': 'Celular', 'campo': 'telefone2'}
-                    ],
-                    url: '/admin/correntistas.json',
-                    onSelecionar: function (data) {
-                        // Action will be executed when a register is selected
-                    }
-                });
