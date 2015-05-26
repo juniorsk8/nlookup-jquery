@@ -17,8 +17,8 @@
 						],
 						url: 'countries.json',
 						onSelect: function (data) {
-							$("#example_countryname").val(data.name);
-							$("#example_countrycode").val(data.code);
+							$("#example_countryname").html(data.name);
+							$("#example_countrycode").html(data.code);
 						}
 					});
 				});
